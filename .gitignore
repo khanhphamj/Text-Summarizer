@@ -1,0 +1,10 @@
+/.idea/.name
+/download_model/model/text_summarization_model/config.json
+/download_model/model/text_summarization_model/generation_config.json
+/download_model/model/text_summarization_model/model.safetensors
+/poetry.lock
+/pyproject.toml
+/.idea/pythonProject.iml
+/download_model/tokenizer/text_summarization_tokenizer/special_tokens_map.json
+/download_model/tokenizer/text_summarization_tokenizer/tokenizer.json
+/download_model/tokenizer/text_summarization_tokenizer/tokenizer_config.json
