@@ -1,29 +1,13 @@
-from sqlmodel import Field, SQLModel, Relationship
-from typing import Optional, List
 from datetime import datetime
+from typing import Optional
+from sqlmodel import SQLModel, Field
+from sqlalchemy import Column
+from sqlalchemy.dialects.mysql import LONGTEXT
 
 
 class Summary(SQLModel, table=True):
-    __tablename__ = "summaries"
-    id: Optional[str] = Field(default=None, primary_key=True)
-    
-    # The date time of the summary
+    id: Optional[int] = Field(default=None, primary_key=True)
     datetime: datetime
-
-    # Main content of the summary
-    main_content: Optional[str]
-
-    # Summarizer of the main content
-    summarizer: Optional[str]
-
-    # The rating of the summary
-    rating: Optional[int]
-
-    def __getitem__(self, item):
-        return getattr(self, item)
-
-    class Config:
-        from_attributes = True
-
-
-Summary.model_rebuild()
+    main_content: str = Field(sa_column=Column(LONGTEXT))
+    summarizer: str = Field(sa_column=Column(LONGTEXT))
+    rating: Optional[int] = None
