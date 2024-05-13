@@ -3,7 +3,10 @@ from typing import Optional, List
 from datetime import datetime
 
 
-class SummaryBase(SQLModel):
+class Summary(SQLModel, table=True):
+    __tablename__ = "summaries"
+    id: Optional[str] = Field(default=None, primary_key=True)
+    
     # The date time of the summary
     datetime: datetime
 
@@ -21,12 +24,6 @@ class SummaryBase(SQLModel):
 
     class Config:
         from_attributes = True
-
-
-class Summary(SummaryBase, table=True):
-    __tablename__ = 'summary'
-
-    id: str = Field(primary_key=True)
 
 
 Summary.model_rebuild()
