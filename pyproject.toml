@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hpc"
+version = "0.1.0"
+description = "HPC-Final Project"
+authors = ["Phạm Phú Khánh"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.40.2"
+torch = "^2.3.0"
+flask = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
