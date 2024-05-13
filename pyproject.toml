@@ -10,6 +10,7 @@ python = "^3.11"
 transformers = "^4.40.2"
 torch = "^2.3.0"
 flask = "^3.0.3"
+sqlmodel = "^0.0.18"
 
 
 [build-system]
