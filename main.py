@@ -1,4 +1,4 @@
-from app import summarizer as app
+from app import app
 
 
 def main():
