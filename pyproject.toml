@@ -11,6 +11,7 @@ transformers = "^4.40.2"
 torch = "^2.3.0"
 flask = "^3.0.3"
 jupyter = "^1.0.0"
+gunicorn = "^22.0.0"
 
 
 [build-system]

@@ -6,6 +6,7 @@ from crud.summary_crud import create_summary
 from datetime import datetime
 from app import app
 from app.db.db import get_db
+from services.summarize_and_capitalize import summarize_and_capitalize
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -16,8 +17,7 @@ def home():
             flash("The text field is empty. Please enter some text to summarize.")
             return redirect(url_for('home'))
 
-        summary_text = summarizer(text, max_length=1000, min_length=30, do_sample=False)[0]["summary_text"]
-        summary_text = summary_text.capitalize()
+        summary_text = summarize_and_capitalize(text)
         return render_template('summary.html', original_text=text, summary_text=summary_text)
 
     return render_template('index.html')
