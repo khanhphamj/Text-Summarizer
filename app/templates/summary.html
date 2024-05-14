@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summary</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #f8f9fa;
-            padding-top: 50px;
-        }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+        .star-rating { display: flex; justify-content: center; gap: 0.5rem; font-size: 2rem; color: #ccc; }
+        .star-rating input { display: none; }
+        .star-rating label { cursor: pointer; transition: color 0.2s; }
+        .star-rating input:checked ~ label, .star-rating label:hover, .star-rating label:hover ~ label { color: #f90; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-center">Summary</h1>
-        <div class="form-group">
-            <h4>Original Text</h4>
-            <p class="bg-light p-3 rounded">{{ original_text }}</p>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+    <div class="w-full max-w-2xl bg-white p-8 shadow-lg rounded">
+        <!-- Logo and Header -->
+        <div class="flex items-center mb-8">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Apollo Team Logo" class="h-28 mr-4">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">Summary</h1>
+            </div>
         </div>
-        <div class="form-group">
-            <h4>Summary</h4>
-            <p class="bg-light p-3 rounded">{{ summary_text }}</p>
-        </div>
-        <a href="/" class="btn btn-secondary btn-block">Back</a>
+
+        <!-- Summary Content -->
+        <form action="{{ url_for('save_summary') }}" method="POST">
+            <div class="mb-4">
+                <h4 class="font-semibold">Original Text</h4>
+                <p class="bg-gray-100 p-4 rounded">{{ original_text }}</p>
+                <input type="hidden" name="original_text" value="{{ original_text }}">
+            </div>
+            <div class="mb-4">
+                <h4 class="font-semibold">Summary</h4>
+                <p class="bg-gray-100 p-4 rounded">{{ summary_text }}</p>
+                <input type="hidden" name="summary_text" value="{{ summary_text }}">
+            </div>
+            <div class="mb-4">
+                <label for="rating" class="font-semibold">Rate the summary (1-5):</label>
+                <div class="star-rating">
+                    <input id="star5" name="rating" type="radio" value="5" class="hidden" />
+                    <label for="star5">★</label>
+                    <input id="star4" name="rating" type="radio" value="4" class="hidden" />
+                    <label for="star4">★</label>
+                    <input id="star3" name="rating" type="radio" value="3" class="hidden" />
+                    <label for="star3">★</label>
+                    <input id="star2" name="rating" type="radio" value="2" class="hidden" />
+                    <label for="star2">★</label>
+                    <input id="star1" name="rating" type="radio" value="1" class="hidden" />
+                    <label for="star1">★</label>
+                </div>
+            </div>
+            <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded">OK</button>
+        </form>
+
+        <!-- Footer -->
+        <footer class="mt-10 text-center text-gray-500">
+            <p>&copy; 2024 Text Summarizer. All rights reserved.</p>
+            <p>Powered by <span class="font-semibold text-blue-500">Apollo Team</span></p>
+        </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

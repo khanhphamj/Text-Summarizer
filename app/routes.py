@@ -17,6 +17,7 @@ def home():
             return redirect(url_for('home'))
 
         summary_text = summarizer(text, max_length=1000, min_length=30, do_sample=False)[0]["summary_text"]
+        summary_text = summary_text.capitalize()
         return render_template('summary.html', original_text=text, summary_text=summary_text)
 
     return render_template('index.html')
@@ -26,7 +27,7 @@ def home():
 def save_summary():
     text = request.form['original_text']
     summary_text = request.form['summary_text']
-    rating = int(request.form['rating'])
+    rating = int(request.form.get('rating', 0))
 
     new_summary = Summary(datetime=datetime.now(), main_content=text, summarizer=summary_text, rating=rating)
     with next(get_db()) as db:
