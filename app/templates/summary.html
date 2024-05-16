@@ -6,19 +6,40 @@
     <title>Summary</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .star-rating { display: flex; justify-content: center; gap: 0.5rem; font-size: 2rem; color: #ccc; }
-        .star-rating input { display: none; }
-        .star-rating label { cursor: pointer; transition: color 0.2s; }
-        .star-rating input:checked ~ label, .star-rating label:hover, .star-rating label:hover ~ label { color: #f90; }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 2rem;
+            color: #ccc;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f90;
+        }
+        .bg-dark-blue {
+            background-color: #007BFF; /* Blue background */
+            color: white; /* Change text color to white for contrast */
+            padding: 0.5rem 1rem; /* Add some padding around the text */
+            border-radius: 5px; /* Optional: adds rounded corners to the background */
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col items-center py-10">
     <div class="w-full max-w-2xl bg-white p-8 shadow-lg rounded">
         <!-- Logo and Header -->
-        <div class="flex items-center mb-8">
+        <div class="flex items-center mb-8" style="width: 100%; justify-content: space-between;">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Apollo Team Logo" class="h-28 mr-4">
-            <div>
-                <h1 class="text-2xl font-bold text-gray-800">Summary</h1>
+            <div class="bg-dark-blue">
+                <h1 class="text-2xl font-bold">Summary</h1>
             </div>
         </div>
 

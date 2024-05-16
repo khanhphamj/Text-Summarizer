@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edffbac1-9af0-434d-abac-92dfd9755006" name="Changes" comment="build_13: Improve app interface">
+    <list default="true" id="edffbac1-9af0-434d-abac-92dfd9755006" name="Changes" comment="build_14: add service summarize_and_capitalize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/summary.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -148,7 +148,16 @@
       <workItem from="1715567389721" duration="121000" />
       <workItem from="1715567520502" duration="237000" />
       <workItem from="1715567813737" duration="7844000" />
-      <workItem from="1715673269478" duration="7534000" />
+      <workItem from="1715673269478" duration="8545000" />
+      <workItem from="1715694966325" duration="9000" />
+      <workItem from="1715696607500" duration="3000" />
+      <workItem from="1715696938215" duration="58000" />
+      <workItem from="1715698113937" duration="1189000" />
+      <workItem from="1715746846971" duration="761000" />
+      <workItem from="1715756130539" duration="597000" />
+      <workItem from="1715763241052" duration="3000" />
+      <workItem from="1715773493905" duration="4000" />
+      <workItem from="1715845948530" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="build_1: add model_summarizer">
       <option name="closed" value="true" />
@@ -214,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715677259346</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="build_14: add service summarize_and_capitalize">
+      <option name="closed" value="true" />
+      <created>1715683363452</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715683363452</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,10 +269,11 @@
     <MESSAGE value="build_11: add jupyter notebook" />
     <MESSAGE value="build_12: refactor routes.py" />
     <MESSAGE value="build_13: Improve app interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="build_13: Improve app interface" />
+    <MESSAGE value="build_14: add service summarize_and_capitalize" />
+    <option name="LAST_COMMIT_MESSAGE" value="build_14: add service summarize_and_capitalize" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HPC$main.coverage" NAME="main Coverage Results" MODIFIED="1715681489785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HPC$main.coverage" NAME="main Coverage Results" MODIFIED="1715846096385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HPC$app.coverage" NAME="app Coverage Results" MODIFIED="1715571187751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
 </project>
