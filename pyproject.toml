@@ -12,6 +12,7 @@ torch = "^2.3.0"
 flask = "^3.0.3"
 jupyter = "^1.0.0"
 gunicorn = "^22.0.0"
+sqlmodel = "^0.0.18"
 
 
 [build-system]

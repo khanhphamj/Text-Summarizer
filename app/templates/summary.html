@@ -47,7 +47,7 @@
         <form action="{{ url_for('save_summary') }}" method="POST">
             <div class="mb-4">
                 <h4 class="font-semibold">Original Text</h4>
-                <p class="bg-gray-100 p-4 rounded">{{ original_text }}</p>
+                <div class="w-full h-64 p-4 border border-gray-300 rounded-lg overflow-auto">{{ original_text }}</div>
                 <input type="hidden" name="original_text" value="{{ original_text }}">
             </div>
             <div class="mb-4">

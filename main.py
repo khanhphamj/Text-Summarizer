@@ -2,7 +2,6 @@ from app import app
 
 
 def main():
-    print("Starting the application...")
     app.run(debug=True)
 
 
