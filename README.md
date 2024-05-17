@@ -20,6 +20,6 @@ Follow these instructions to set up the Apollo Text Summarizer on your local mac
 2. Install the required dependencies
    ```bash
    pip instaill poetry
-`
+``
    ```bash
    poetry install
