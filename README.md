@@ -25,10 +25,16 @@ Follow these instructions to set up the Apollo Text Summarizer on your local mac
    poetry install
    ```
 ## Example
+
 Here are some screenshots of the Apollo Text Summarizer in action:
-![UI_1](https://github.com/khanhphamj/Text-Summarizer/assets/120659979/b0c2c64d-3020-4485-a000-2d48301d439b)
-Figure 1: Input interface of Apollo Text Summarizer
-![UI_2](https://github.com/khanhphamj/Text-Summarizer/assets/120659979/b5c12fd3-7cbb-45c7-a4fa-0e3f47c534d4)
-Figure 2: Summary output and user rating interface
+
+![Input Interface of Apollo Text Summarizer](https://github.com/khanhphamj/Text-Summarizer/assets/120659979/b0c2c64d-3020-4485-a000-2d48301d439b)
+
+*Figure 1: Input interface of Apollo Text Summarizer.*
+
+![Summary Output and User Rating Interface](https://github.com/khanhphamj/Text-Summarizer/assets/120659979/b5c12fd3-7cbb-45c7-a4fa-0e3f47c534d4)
+
+*Figure 2: Summary output and user rating interface.*
+
 
 
