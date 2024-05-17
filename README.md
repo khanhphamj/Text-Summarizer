@@ -29,12 +29,8 @@ Follow these instructions to set up the Apollo Text Summarizer on your local mac
 Here are some screenshots of the Apollo Text Summarizer in action:
 
 <p float="left">
-  <img src="https://github.com/khanhphamj/Text-Summarizer/assets/120659979/bab14acf-26ca-4e69-91e3-366944cb29db" width="48%" alt="Input Interface of Apollo Text Summarizer" />
-  <img src="https://github.com/khanhphamj/Text-Summarizer/assets/120659979/b709fd39-ce53-4529-90eb-5d7c786622bf" width="48%" alt="Summary Output and User Rating Interface" />
+  <img src="https://github.com/khanhphamj/Text-Summarizer/assets/120659979/6fee0e56-f083-40cd-b09c-f114fff1774d" width="48%" alt="Input Interface of Apollo Text Summarizer" />
+  <img src="https://github.com/khanhphamj/Text-Summarizer/assets/120659979/065016df-ba51-40aa-b56a-779708559b51" width="48%" alt="Summary Output and User Rating Interface" />
 </p>
 
 *Figure 1: Input interface of Apollo Text Summarizer (left), Figure 2: Summary output and user rating interface (right).*
-
-
-
-
