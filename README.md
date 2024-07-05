@@ -6,7 +6,6 @@ Welcome to Apollo Text Summarizer! This application is designed to provide fast 
 
 - **Fast and Accurate Summarization**: Our tool quickly condenses long articles, reports, and documents into short summaries, highlighting key points.
 - **Interactive User Feedback System**: Users can rate the summaries, allowing us to continuously improve the accuracy and relevance of our outputs.
-- **Multilingual Support**: The summarizer supports multiple languages, making it accessible to a global audience.
 - **User-Friendly Interface**: Designed with simplicity and ease of use in mind.
 
 ## Install
