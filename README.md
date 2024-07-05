@@ -37,5 +37,5 @@ Here are some screenshots of the Apollo Text Summarizer in action:
 
 ## Video Demo
 
-https://github.com/khanhphamj/Text-Summarizer/assets/120659979/eed46892-5c24-499f-90e2-6ac048e42f30
+https://github.com/khanhphamj/Text-Summarizer/assets/120659979/5cba30d8-71ca-4288-b29a-d6323a766fe9
 
