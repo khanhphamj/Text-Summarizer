@@ -21,7 +21,7 @@ Follow these instructions to set up the Apollo Text Summarizer on your local mac
    pip install poetry
    ```
    ```bash
-   poetry install
+   poetry init
    ```
 ## Example
 
